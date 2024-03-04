@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stark Industries - Criptomoedas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+                <video width="150" height="auto" autoplay loop muted>
+                <source src="starkCoinMovie.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <h1>Stark Corporation</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="cont.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="crypto-info">
+            <h2>Informações sobre Criptomoedas</h2>
+            <div id="converter">
+                <input type="number" id="amount" placeholder="Quantidade">
+                <select id="cryptos">
+                    <option value="solana">StarkCoin</option> <!-- Somente para representação, moeda fictícia -->
+                    <option value="bitcoin">Bitcoin</option>
+                    <option value="ethereum">Ethereum</option>
+                    <option value="cardano">Cardano</option>
+                    <option value="binancecoin">Binance Coin</option>     
+                </select>
+                <button onclick="getCryptoInfo()">Obter Cotação</button>
+            </div>
+            <div id="cryptoInfo" style="display: none;">
+                <div id="starkCoinInfo" class="crypto-details">
+                    <img src="stark.jpg" alt="StarkCoin">
+                </div>
+                <div id="bitcoinInfo" class="crypto-details">
+                    <p>Descrição do Bitcoin</p>
+                    <img src="bitcoin.png" alt="Bitcoin">
+                </div>
+                <div id="ethereumInfo" class="crypto-details">
+                    <p>Descrição do Ethereum</p>
+                    <img src="ethereum.png" alt="Ethereum Logo">
+                </div>
+                <div id="cardanoInfo" class="crypto-details">
+                    <p>Descrição do Cardano</p>
+                    <img src="cardano.png" alt="Cardano Logo">
+                </div>
+                <div id="binanceCoinInfo" class="crypto-details">
+                    <p>Descrição do Binance Coin</p>
+                    <img src="binance.png" alt="Binance Coin Logo">
+                </div>
+            </div> 
+        </section>     
+    </main>
+    <footer>
+        <p>&copy; 2024 Stark Corporation. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

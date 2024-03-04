@@ -1,0 +1,125 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e97575; 
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.logo video {
+    width: 100px; 
+    border-radius: 50%; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    margin-top: 100px; 
+}
+#contactForm {
+    max-width: 500px; 
+    margin: 0 auto; 
+}
+
+#contactForm div {
+    margin-bottom: 20px;
+}
+
+#contactForm label {
+    display: block; 
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ffffff; 
+    border-radius: 5px; 
+}
+
+#contactForm textarea {
+    height: 100px; 
+}
+
+#contactForm button {
+    padding: 10px 20px; 
+    background-color: #333; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+.crypto-details img {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #a3a1a1; /* Cor de fundo correspondente ao bg */
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
