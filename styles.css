@@ -52,33 +52,33 @@ main {
     padding: 20px;
     margin-top: 100px; 
 }
-#contactForm {
+#contatoForm {
     max-width: 500px; 
     margin: 0 auto; 
 }
 
-#contactForm div {
+#contatoForm div {
     margin-bottom: 20px;
 }
 
-#contactForm label {
+#contatoForm label {
     display: block; 
 }
 
-#contactForm input[type="text"],
-#contactForm input[type="email"],
-#contactForm textarea {
+#contatoForm input[type="text"],
+#contatoForm input[type="email"],
+#contatoForm textarea {
     width: 100%; 
     padding: 10px; 
     border: 1px solid #ffffff; 
     border-radius: 5px; 
 }
 
-#contactForm textarea {
+#contatoForm textarea {
     height: 100px; 
 }
 
-#contactForm button {
+#contatoForm button {
     padding: 10px 20px; 
     background-color: #333; 
     color: #fff; 

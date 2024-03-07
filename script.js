@@ -13,7 +13,7 @@ function getCryptoInfo() {
         }
 
         var cryptoInfoDiv = document.getElementById("cryptoInfo");
-        cryptoInfoDiv.innerHTML = "<h3>Informações sobre " + crypto + "</h3>";
+        cryptoInfoDiv.innerHTML = "<h3>Informações ";
         
         var usdPrice = parseFloat(data[crypto].usd) * amount;
         var eurPrice = parseFloat(data[crypto].eur) * amount;
@@ -23,6 +23,10 @@ function getCryptoInfo() {
         cryptoInfoDiv.innerHTML += "<p>Preço em EUR: €" + eurPrice.toFixed(2) + "</p>";
         cryptoInfoDiv.innerHTML += "<p>Preço em BRL: R$" + brlPrice.toFixed(2) + "</p>";
         
+        if (data[crypto] == data["solana"]) {
+            var cryptoInfoDiv = document.getElementById("cryptoInfo");
+            cryptoInfoDiv.innerHTML += "<p>Esta é a StarkCoin, uma moeda fictícia usada apenas para representação.</p>";
+        }
         
         var imageSrc;
         var description;
